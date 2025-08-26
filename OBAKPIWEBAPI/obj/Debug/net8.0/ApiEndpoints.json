@@ -1,0 +1,73 @@
+[
+  {
+    "ContainingType": "OBAKPIWEBAPI.Controllers.KpiMapperController",
+    "Method": "GetKpiByStaffNumber",
+    "RelativePath": "api/KpiMapper/ByStaffNumber/{staffNumber}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "staffNumber",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OBAKPIWEBAPI.Services.KpiScoreResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "OBAKPIWEBAPI.Controllers.KpiMapperController",
+    "Method": "CalculateKpis",
+    "RelativePath": "api/KpiMapper/CalculateKpis",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "OBAKPIWEBAPI.DTOs.DateRangeRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[OBAKPIWEBAPI.Services.KpiScoreResult, OBAKPIWEBAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OBAKPIWEBAPI.Controllers.KpiMapperController",
+    "Method": "TestConnection",
+    "RelativePath": "api/KpiMapper/TestConnection",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
